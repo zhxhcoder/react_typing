@@ -1,4 +1,4 @@
-import React, { useState, useRef, useImperativeHandle } from 'react'
+import React, {useState, useRef, useImperativeHandle} from 'react'
 import styles from './index.less'
 
 export interface ItemType {
@@ -6,6 +6,7 @@ export interface ItemType {
     desc: string,
     url?: string
 }
+
 export interface RowProps {
     rowIndex: number,
     textArray: ItemType[],
@@ -34,15 +35,17 @@ function Row(props: RowProps, ref: React.Ref<RowRefMethods>) {
             setIsRead: setIsRead
         }
     })
+
     function blur() {
         const input = inputRef.current
-        if(input) {
+        if (input) {
             input.blur()
         }
     }
+
     function focus() {
         const input = inputRef.current
-        if(input) {
+        if (input) {
             input.focus()
         }
     }
@@ -50,38 +53,38 @@ function Row(props: RowProps, ref: React.Ref<RowRefMethods>) {
     function setIsRead(bl: boolean) {
         setIsReadOnly(bl)
     }
-    
+
     function changeInputValue(event: React.ChangeEvent<HTMLInputElement>) {
-        const { value } = event.target
-        
-        if(value.length >= coderNumber) {
+        const {value} = event.target
+
+        if (value.length >= coderNumber) {
             blur()
             props.next()
         }
-        if(value === '' && targetCode !== '') {
+        if (value === '' && targetCode !== '') {
             console.log('row delete')
             blur()
             props.prev()
         }
-        if(value.length > coderNumber) return
+        if (value.length > coderNumber) return
         setTargetCode(value)
     }
 
     function getClassName(code: string, index: number): string {
         const valueIndex = targetCode.length - 1
-        if(index > valueIndex) {
+        if (index > valueIndex) {
             return 'code-atom'
         }
-        if(code === targetCode[index]) {
+        if (code === targetCode[index]) {
             return `${styles.success} code-success code-atom`
-        }else{
+        } else {
             return `${styles.error} code-error code-atom`
         }
     }
 
     function changeDesc(item: ItemType) {
         // 
-        if(itemWord !== item) {
+        if (itemWord !== item) {
             setItem(item)
         }
     }
@@ -95,21 +98,22 @@ function Row(props: RowProps, ref: React.Ref<RowRefMethods>) {
         <p className={styles['content-row']}>
             {
                 textArray.map((item: ItemType) => {
-                    if(coderNumber === targetCode.length - 1 && !isReadOnly) {
+                    if (coderNumber === targetCode.length - 1 && !isReadOnly) {
                         // 进入下一个单词的边界，更新单词描述
                         changeDesc(item)
                     }
                     return [...item.text, ' '].map((code: string) => {
                         coderNumber = coderNumber + 1
-                        return <span key={`${coderNumber}`} data-i={coderNumber} className={getClassName(code, coderNumber)}>{code}</span>
+                        return <span key={`${coderNumber}`} data-i={coderNumber}
+                                     className={getClassName(code, coderNumber)}>{code}</span>
                     })
                 })
             }
         </p>
 
         <input readOnly={isReadOnly} ref={inputRef} className={styles['content-row']} type="text"
-            onChange={changeInputValue} onPaste={paste}/>
-        
+               onChange={changeInputValue} onPaste={paste}/>
+
         {itemWord && !isReadOnly && <div className={styles.desc}>
             <p><a href={itemWord.url} target="_blank">[查看详情]</a>{itemWord.desc}</p>
         </div>}

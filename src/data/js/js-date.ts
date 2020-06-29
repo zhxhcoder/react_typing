@@ -87,7 +87,7 @@ export default [
         'url': 'https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date/setTime',
         'text': 'setTime()',
         'desc': 'setTime() 方法以一个表示从1970-1-1 00:00:00 UTC计时的毫秒数为来为 Date 对象设置时间。'
-    },  {
+    }, {
         'url': 'https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date/setYear',
         'text': 'setYear()',
         'desc': 'The setYear() method sets the year for a specified date according to local time. Because setYear does not set full years (\'year 2000 problem\'), it is no longer used and has been replaced by the setFullYear method.'

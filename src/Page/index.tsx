@@ -1,14 +1,14 @@
-import React, { useState, useRef, useEffect } from 'react';
-import Coder, { CoderMethots } from '../Components/Coder';
+import React, {useState, useRef, useEffect} from 'react';
+import Coder, {CoderMethots} from '../Components/Coder';
 // import produce from 'immer'
-import { 
+import {
     jsAllData,
-    jsStringData, 
-    jsArrayData, 
-    jsDateData, 
-    jsMathData, 
-    jsNumberData, 
-    jsObjectData, 
+    jsStringData,
+    jsArrayData,
+    jsDateData,
+    jsMathData,
+    jsNumberData,
+    jsObjectData,
     jsMapSetData,
     jsPromiseData,
     jsGlobalData
@@ -16,9 +16,9 @@ import {
 import styles from './index.less'
 
 export default function Index() {
-    
+
     const [select, setSelect] = useState('1')
-    const [speed, setSpeed] = useState('') 
+    const [speed, setSpeed] = useState('')
     const [correct, setCorrect] = useState('')
     const [codeData, setCodeData] = useState(jsArrayData)
     const [coderKey, updateCoderKey] = useState('')
@@ -27,9 +27,9 @@ export default function Index() {
 
 
     useEffect(() => {
-        if(coderKey && isStart) {
+        if (coderKey && isStart) {
             const coder = codeRef.current
-            if(coder) {
+            if (coder) {
                 coder.start()
             }
         }
@@ -41,38 +41,38 @@ export default function Index() {
         setIsStart(false)
         setSelect(value)
         switch (value) {
-        case '0':
-            setCodeData(jsAllData)
-            break;
-        case '1':
-            setCodeData(jsArrayData)
-            break;
-        case '2':
-            setCodeData(jsDateData)
-            break;
-        case '3':
-            setCodeData(jsMathData)
-            break;
-        case '4':
-            setCodeData(jsNumberData)
-            break;
-        case '5':
-            setCodeData(jsObjectData)
-            break;
-        case '6':
-            setCodeData(jsStringData)
-            break;
-        case '7':
-            setCodeData(jsMapSetData)
-            break;
-        case '8':
-            setCodeData(jsPromiseData)
-            break;
-        case '9':
-            setCodeData(jsGlobalData)
-            break;
-        default :
-            setCodeData(jsArrayData)
+            case '0':
+                setCodeData(jsAllData)
+                break;
+            case '1':
+                setCodeData(jsArrayData)
+                break;
+            case '2':
+                setCodeData(jsDateData)
+                break;
+            case '3':
+                setCodeData(jsMathData)
+                break;
+            case '4':
+                setCodeData(jsNumberData)
+                break;
+            case '5':
+                setCodeData(jsObjectData)
+                break;
+            case '6':
+                setCodeData(jsStringData)
+                break;
+            case '7':
+                setCodeData(jsMapSetData)
+                break;
+            case '8':
+                setCodeData(jsPromiseData)
+                break;
+            case '9':
+                setCodeData(jsGlobalData)
+                break;
+            default :
+                setCodeData(jsArrayData)
         }
     }
 
@@ -80,6 +80,7 @@ export default function Index() {
         updateCoderKey(Math.random() + '' + new Date().getTime())
         setIsStart(true)
     }
+
     function restart() {
         updateCoderKey(Math.random() + '' + new Date().getTime())
         setIsStart(true)
@@ -89,10 +90,11 @@ export default function Index() {
         setSpeed(speed)
         setCorrect(correct)
     }
+
     return (<>
         <div>
             <select className="select" value={select} onChange={changeSelect}>
-                
+
                 <option value="1">js Array</option>
                 <option value="2">js Date</option>
                 <option value="3">js Math</option>

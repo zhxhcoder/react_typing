@@ -1,5 +1,6 @@
 import React from 'react'
 import {ItemType, RowProps} from './index'
+
 function RowContent(props: RowProps) {
     // function getClassName(code: string, index: number): string {
     //     const valueIndex = targetCode.length - 1

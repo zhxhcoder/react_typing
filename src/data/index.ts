@@ -25,11 +25,12 @@ function splitRow(data: any[]): any[] {
     })
     return result
 }
+
 function getLength(data: any[]): number {
     return data.reduce((prev, curr) => {
         return prev + curr.text.length + 1
     }, 0)
-    
+
 }
 
 export const testData = splitRow(test)

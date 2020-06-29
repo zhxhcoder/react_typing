@@ -5,8 +5,8 @@ import Index from './Page'
 export default function App() {
     return (
         <div className="container">
-            <Index />
+            <Index/>
         </div>
     );
-    
+
 }

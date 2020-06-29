@@ -1,24 +1,28 @@
 * {
     margin: 0;
     padding: 0;
-    font-weight: 100!important;
-    font-family: "Lucida Console", "Monaco", "Courier New", "Courier", "monospace", "宋体"!important;
-  }
-  .container {
+    font-weight: 100 !important;
+    font-family: "Lucida Console", "Monaco", "Courier New", "Courier", "monospace", "宋体" !important;
+}
+
+.container {
     width: 1000px;
     margin: 0 auto;
-  }
-  .select {
+}
+
+.select {
     display: inline-block;
     width: 100px;
     height: 30px;
-  }
-  .button {
+}
+
+.button {
     display: inline-block;
     width: 100px;
     height: 30px;
     vertical-align: middle;
-  }
-  .ml-sm {
+}
+
+.ml-sm {
     margin-left: 10px;
-  }
+}

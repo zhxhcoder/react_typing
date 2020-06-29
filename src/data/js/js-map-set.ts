@@ -2,49 +2,49 @@
 
 export default [
     {
-      "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/clear",
-      "text": "clear()",
-      "desc": "clear()方法会移除Map对象中的所有元素。"
+        "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/clear",
+        "text": "clear()",
+        "desc": "clear()方法会移除Map对象中的所有元素。"
     },
     {
-      "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/delete",
-      "text": "delete()",
-      "desc": " delete() 方法用于移除 Map 对象中指定的元素。"
+        "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/delete",
+        "text": "delete()",
+        "desc": " delete() 方法用于移除 Map 对象中指定的元素。"
     },
     {
-      "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/entries",
-      "text": "entries()",
-      "desc": "entries() 方法返回一个新的包含 [key, value] 对的 Iterator 对象，返回的迭代器的迭代顺序与 Map 对象的插入顺序相同。"
+        "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/entries",
+        "text": "entries()",
+        "desc": "entries() 方法返回一个新的包含 [key, value] 对的 Iterator 对象，返回的迭代器的迭代顺序与 Map 对象的插入顺序相同。"
     },
     {
-      "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/forEach",
-      "text": "forEach()",
-      "desc": "forEach() 方法将会以插入顺序对 Map 对象中的每一个键值对执行一次参数中提供的回调函数。"
+        "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/forEach",
+        "text": "forEach()",
+        "desc": "forEach() 方法将会以插入顺序对 Map 对象中的每一个键值对执行一次参数中提供的回调函数。"
     },
     {
-      "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/get",
-      "text": "get()",
-      "desc": "get() 方法返回某个 Map 对象中的一个指定元素。"
+        "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/get",
+        "text": "get()",
+        "desc": "get() 方法返回某个 Map 对象中的一个指定元素。"
     },
     {
-      "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/has",
-      "text": "has()",
-      "desc": "方法has() 返回一个bool值，用来表明map 中是否存在指定元素."
+        "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/has",
+        "text": "has()",
+        "desc": "方法has() 返回一个bool值，用来表明map 中是否存在指定元素."
     },
     {
-      "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/keys",
-      "text": "keys()",
-      "desc": "keys() 返回一个新的 Iterator 对象。它包含按照顺序插入 Map 对象中每个元素的key值。"
+        "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/keys",
+        "text": "keys()",
+        "desc": "keys() 返回一个新的 Iterator 对象。它包含按照顺序插入 Map 对象中每个元素的key值。"
     },
     {
-      "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/set",
-      "text": "set()",
-      "desc": "set() 方法为 Map 对象添加或更新一个指定了键（key）和值（value）的（新）键值对。"
+        "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/set",
+        "text": "set()",
+        "desc": "set() 方法为 Map 对象添加或更新一个指定了键（key）和值（value）的（新）键值对。"
     },
     {
-      "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/values",
-      "text": "values()",
-      "desc": "一个新的 Map 可迭代对象."
+        "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/values",
+        "text": "values()",
+        "desc": "一个新的 Map 可迭代对象."
     },
     {
         "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set/add",
@@ -81,6 +81,6 @@ export default [
         "text": "values()",
         "desc": "values() 方法返回一个 Iterator  对象，该对象按照原Set 对象元素的插入顺序返回其所有元素。"
     }
-  ]
+]
 
 /* eslint-disable */
